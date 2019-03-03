@@ -28,7 +28,7 @@
 	GOTO LOGCAT
 :OVER
 	cls
-	adb logcat > logact.txt
+	adb logcat > logcat.txt
 	GOTO END
 :NOVER
 	cls
