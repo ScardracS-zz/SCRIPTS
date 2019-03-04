@@ -1,14 +1,15 @@
 @echo off
 :WARNING
-	echo Created by me (ScardracS) for the Moto X Play.
-	echo I am not responsible for any damage, you're been warned!
+	echo Created by me (ScardracS) for the Moto X Play/Pure/Style.
+	echo You can use and/or modify that script, but please provide to me proper credit.
+	echo I've tested it on Moto X Play, but I'm not responsible for any damage, You've been warned!
 	echo You will be able to quit the installer simply press K on any question.
 	echo
 	echo You have to download the stock ROM for your device before proceed.
 	pause
 :START
 	cls
-	echo Have You already installed ADB and Fastboot? (Yes/No/Kill the script)
+	echo Have You already installed ADB and Fastboot? (Y/N/K)
 	set /p a=
 	if /i "%a%"=="Y" GOTO STARTINSTALL
 	if /i "%a%"=="N" GOTO ADB
@@ -17,15 +18,16 @@
 	GOTO START
 :ADB
 	cls
-	echo This is the ADB and Fastboot's installer.
-	echo You have to install both ADB, Fastboot and Drivers.
+	echo This is the ADB and Fastboot's downloader and installer.
+	echo You have to install both ADB, Fastboot and Drivers in order to install STOCK ROMs.
 	echo It's better to install it System Wide.
 	pause
-	start adbinstaller.exe
+	start https://github.com/hackslashX/ADB-Fastboot-Installer-for-Windows/raw/master/versions/adb_fastboot_installer-1.2s.exe
+	start adb_fastboot_installer-1.2s.exe
 	pause
 :STARTINSTALL
 	cls
-	echo Are You ready to intall STOCK ROM? (Yes/No/Kill the script)
+	echo Are You ready to intall STOCK ROM? (Y/N/K)
 	set /p b=
 	if /i "%b%"=="Y" GOTO READY
 	if /i "%b%"=="N" GOTO START
@@ -34,7 +36,7 @@
 	GOTO STARTINSTALL
 :READY
 	cls
-	echo Do you want to delete user data? (Yes/No/Kill the script)
+	echo Do you want to delete user data? (Y/N/K)
 	set /p d=
 	if /i "%d%"=="Y" GOTO WIPE
 	if /i "%d%"=="N" GOTO NOWIPE
@@ -104,7 +106,7 @@
 	fastboot erase clogo
 	fastboot oem fb_mode_clear
 :LOOK
-	echo Do you want to lock your device? (Yes/No)
+	echo Do you want to lock your device? (Y/N)
 	set /p e=
 	if /i "%d%"=="Y" GOTO LOCK
 	if /i "%d%"=="N" GOTO END
