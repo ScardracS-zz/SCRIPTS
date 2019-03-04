@@ -13,11 +13,12 @@
 	GOTO START
 :INSTALLER
 	cls
-	echo I'll install ADB
-	echo Please install both ADB, Fatsboot and Drivers.
+	echo This is the ADB and Fastboot's downloader and installer. (Thank's to XDA@HackSlash)
+	echo You have to install both ADB, Fastboot and Drivers in order to install STOCK ROMs.
+	echo It's better to install it System Wide.
 	start https://github.com/hackslashX/ADB-Fastboot-Installer-for-Windows/raw/master/versions/adb_fastboot_installer-1.2s.exe
-	start adb_fastboot_installer-1.2s.exe
 	pause
+	start adb_fastboot_installer-1.2s.exe
 :LOGCAT
 	cls
 	echo Do you want to overwrite previous file? (Y/N/K)
