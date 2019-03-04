@@ -3,7 +3,7 @@
 	echo This script is made and tested by me (ScardracS).
 	echo You can use and/or modify it, but please give me proper credit.
 :START
-	echo.
+	echo
 	echo Have You installed ADB? (Y/N/K)
 	set /p a=
 	if /i "%a%"=="Y" GOTO LOGCAT
