@@ -6,7 +6,6 @@
 	echo You will be able to quit the installer simply press K on any question.
 	echo
 	echo You have to download the stock ROM for your device before proceed.
-	pause
 :START
 	cls
 	echo Have You already installed ADB and Fastboot? (Y/N/K)
@@ -21,10 +20,11 @@
 	echo This is the ADB and Fastboot's downloader and installer.
 	echo You have to install both ADB, Fastboot and Drivers in order to install STOCK ROMs.
 	echo It's better to install it System Wide.
-	pause
+	echo
+	echo Press ANY key when download is completed
 	start https://github.com/hackslashX/ADB-Fastboot-Installer-for-Windows/raw/master/versions/adb_fastboot_installer-1.2s.exe
-	start adb_fastboot_installer-1.2s.exe
 	pause
+	start adb_fastboot_installer-1.2s.exe
 :STARTINSTALL
 	cls
 	echo Are You ready to intall STOCK ROM? (Y/N/K)
