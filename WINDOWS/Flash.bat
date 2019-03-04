@@ -17,11 +17,9 @@
 	GOTO START
 :ADB
 	cls
-	echo This is the ADB and Fastboot's downloader and installer.
+	echo This is the ADB and Fastboot's downloader and installer. (Thank's to XDA@HackSlash)
 	echo You have to install both ADB, Fastboot and Drivers in order to install STOCK ROMs.
 	echo It's better to install it System Wide.
-	echo
-	echo Press ANY key when download is completed
 	start https://github.com/hackslashX/ADB-Fastboot-Installer-for-Windows/raw/master/versions/adb_fastboot_installer-1.2s.exe
 	pause
 	start adb_fastboot_installer-1.2s.exe
