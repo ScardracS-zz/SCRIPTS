@@ -35,10 +35,10 @@ case $A in
 	esac
 clear
 echo "REMEBER, DON'T STOP THE FLASHING PROCESS!!"
-echo "Are You Ready? Please write Y or N"
+echo "Are You Ready? (y/n)"
 read B
 case $B in
-	Y) echo "Do you want to delete userdata? Please write y or n. Any other values will stop the program!"
+	y) echo "Do you want to delete userdata? Please write y or n. Any other values will stop the program!"
 		read C
 		case $C in
 		y)
