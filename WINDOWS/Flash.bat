@@ -1,6 +1,6 @@
 @echo off
 :WARNING
-	echo Created by me (ScardracS) for the Moto X Play/Pure/Style.
+	echo Created by me (ScardracS) for the Motorola Moto X Play/Pure/Style.
 	echo You can use and/or modify that script, but please provide to me proper credit.
 	echo I've tested it on Moto X Play, but I'm not responsible for any damage, You've been warned!
 	echo You will be able to quit the installer simply press K on any question.
