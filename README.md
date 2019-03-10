@@ -1,6 +1,6 @@
 # SCRIPTS for LUX, STYLE and PURE
 
-Hello everybody! These are scripts developed by me for flashing stock ROMs of these devices.
+Hello everybody! These scripts are developed by me for flashing stock ROMs of these devices.
 You can use and/or modify without any limits but please provide to me proper credits.
 Any updates or suggestions will be appreciated!
 
