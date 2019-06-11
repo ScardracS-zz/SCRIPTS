@@ -22,7 +22,7 @@ echo "Press 6 and enter if you have emerge package manager."
 echo "Press any other values to stop the Script and exit."
 read A
 case $A in
-		1)	sudo apt-get update && sudo apt-get install adb fastboot
+		1)	sudo apt-get install adb fastboot
 		;;
 		2)	sudo dnf install android-tools
 		;;
