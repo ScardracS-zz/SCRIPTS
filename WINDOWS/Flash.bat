@@ -46,7 +46,6 @@
 	echo WIPE SUBSCRIPT
 	echo DO NOT STOP THE FLASHING PROCESS!!
 	adb reboot-bootloader
-	echo FOLLOW THE INSTRUCTIONS ON WATCH ME FOLDER AND THAN HIT ENTER
 	pause
 	fastboot oem fb_mode_set
 	fastboot flash partition gpt.bin
@@ -78,7 +77,6 @@
 	echo NOWIPE SUBSCRIPT
 	echo DO NOT STOP THE FLASHING PROCESS!!
 	adb reboot-bootloader
-	echo FOLLOW THE INSTRUCTIONS ON WATCH ME FOLDER AND THAN HIT ENTER
 	pause
 	fastboot oem fb_mode_set
 	fastboot flash partition gpt.bin
