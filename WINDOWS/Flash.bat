@@ -3,9 +3,9 @@
 	echo Created by me (ScardracS) for the Motorola Moto X Play/Pure/Style.
 	echo You can use and/or modify that script, but please provide to me proper credit.
 	echo I've tested it on Moto X Play, but I'm not responsible for any damage, You've been warned!
-	echo You will be able to quit the installer simply press K on any question.
+	echo Press Y or N at any question. Press K to kill the process and exit the installer.
 	echo
-	echo You have to download the stock ROM for your device before proceed.
+	echo You have to download the stock ROM and put on the same folder of this installer before proceed.
 :START
 	cls
 	echo Have You already installed ADB and Fastboot? (Y/N/K)
