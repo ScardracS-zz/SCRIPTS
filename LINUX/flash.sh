@@ -22,7 +22,7 @@ echo "Press 6 and enter if you have emerge package manager."
 echo "Press any other values to stop the Script and exit."
 read A
 case $A in
-		1)	sudo apt-get install adb fastboot
+		1)	sudo apt-get install -y adb fastboot
 		;;
 		2)	sudo dnf install android-tools
 		;;
@@ -37,7 +37,7 @@ case $A in
 		*)	echo "Script stopped!" && exit
 	esac
 clear
-echo "REMEBER, DON'T STOP THE FLASHING PROCESS!!"
+echo "REMEMBER, DON'T PRESS ANYTHING DURING THE FLASHING PROCESS!!"
 echo "Are You Ready? (y/n)"
 read B
 case $B in
@@ -79,9 +79,9 @@ case $B in
 				clear
 				exit
 			;;
-			y)
+			n)
 				clear
-				echo "Wipe Script"
+				echo "No Wipe Script"
 				sudo adb reboot-bootloader
 				sudo fastboot oem fb_mode_set
 				sudo fastboot flash partition gpt.bin
