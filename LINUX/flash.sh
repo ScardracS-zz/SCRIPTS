@@ -28,7 +28,7 @@ case $A in
 		;;
 		3)	sudo yum install android-tools
 		;;
-		4)	sudo pacman -Sy android-tools
+		4)	sudo pacman -Sy adb fastboot
 		;;
 		5)	sudo yaourt -Sy android-tools
 		;;
