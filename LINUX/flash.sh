@@ -1,38 +1,29 @@
 #! /bin/bash
-# Created by me (ScardracS) and Licensed under the Apache License, Version 2.0 (the "License");
-# You may not use this file except in compliance with the License.
-# You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-echo ""
 echo "This script is developed & tested by me (ScardracS) for the Motorola Moto X Play/Pure/Style."
 echo "Feel free to use and/or modify it, but please give me proper credits."
 echo "I don't assume any responsibility if You damage your device/s, You have been warned!"
-echo ""
+echo
 echo "First of all please select your PC's OS."
-echo "Press 1 and enter if you have apt package manager."
-echo "Press 2 and enter if you have dnf package manager."
-echo "Press 3 and enter if you have yum package manager."
-echo "Press 4 and enter if you have pacman package manager."
-echo "Press 5 and enter if you have yaourt package manager."
-echo "Press 6 and enter if you have emerge package manager."
-echo "Press any other values to stop the Script and exit."
+echo "1 + enter for apt (debian/ubuntu/mint)."
+echo "2 + enter for yum (fedora/red-hat)."
+echo "3 + enter for pacman (archlinux/manjaro)."
+echo "4 + enter for emerge (gentoo/funtoo/sabayon)."
+echo "5 + enter for apk (alpine linux)."
+echo "Any other values to stop this script and exit."
+echo
+echo "Any answer on that script MUST be lowercase."
+echo
 read A
 case $A in
 		1)	sudo apt-get install -y adb fastboot
 		;;
-		2)	sudo dnf install android-tools
+		2)	sudo yum install android-tools
 		;;
-		3)	sudo yum install android-tools
+		3)	sudo pacman -Sy adb fastboot
 		;;
-		4)	sudo pacman -Sy adb fastboot
+		4)	sudo emerge --ask android-sdk-update-manager
 		;;
-		5)	sudo yaourt -Sy android-tools
-		;;
-		6)	sudo emerge --ask android-sdk-update-manager
+		5)	sudo apk add android-tools
 		;;
 		*)	echo "Script stopped!" && exit
 	esac
@@ -41,7 +32,7 @@ echo "REMEMBER, DON'T PRESS ANYTHING DURING THE FLASHING PROCESS!!"
 echo "Are You Ready? (y/n)"
 read B
 case $B in
-	y) 
+	y)
 		echo "Do you want to delete userdata? (y/n)"
 		read C
 		case $C in
