@@ -15,7 +15,7 @@ echo "Any answer on that script MUST be lowercase."
 echo
 read A
 case $A in
-		1)	sudo apt-get install -y adb fastboot
+		1)	sudo apt install -y adb fastboot
 		;;
 		2)	sudo yum install android-tools
 		;;
